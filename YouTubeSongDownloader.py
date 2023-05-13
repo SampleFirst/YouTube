@@ -30,12 +30,12 @@ def time_to_seconds(time):
 ## Commands --------------------------------
 @bot.on_message(filters.command(['start']))
 def start(client, message):
-   Yᴇᴀɢᴇʀɪsᴛ Bᴏᴛs = f"""ʜᴇʏ {message.from_user.first_name}
+   welcomed = f"""ʜᴇʏ {message.from_user.first_name}
 ɪᴀᴍ ᴀ ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ..
 sᴇɴᴅ ᴍᴇ ᴛʜᴇ ᴜʀʟ(ʟɪɴᴋ) ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ"""
-    message.reply_text(
-        text=Yᴇᴀɢᴇʀɪsᴛ Bᴏᴛs , 
-        quote=False,
+
+    await message.reply_text(welcomed, 
+        quote=true,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
