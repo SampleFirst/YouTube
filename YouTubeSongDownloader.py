@@ -34,7 +34,8 @@ def start(client, message):
 ɪᴀᴍ ᴀ ʏᴏᴜᴛᴜʙᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ ʙᴏᴛ..
 sᴇɴᴅ ᴍᴇ ᴛʜᴇ ᴜʀʟ(ʟɪɴᴋ) ᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ"""
 
-    await message.reply_text(welcomed, 
+    message.reply_text(
+        text=welcomed , 
         quote=true,
         reply_markup=InlineKeyboardMarkup(
             [
